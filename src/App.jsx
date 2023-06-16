@@ -1,10 +1,14 @@
-import "./App.css";
+import Navbar from "./components/layout/navbar/Navbar";
+import Home from "./components/pages/home/Home";
+import Item from "./components/pages/itemList/Item";
 
 function App() {
   return (
-    <div>
-      <h1>Hola mundo</h1>;
-    </div>
+    <>
+      <Navbar />
+      <Item greeting={"Welcome to Majestic"} />
+      <Home />
+    </>
   );
 }
 
