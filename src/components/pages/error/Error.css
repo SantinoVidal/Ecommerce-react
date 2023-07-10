@@ -1,0 +1,11 @@
+.errorType {
+     margin-top: 2rem;
+     display: flex;
+     justify-content: flex-start;
+     flex-direction: row;
+}
+
+.errorType img {
+     width: 13rem;
+     height: 4rem;
+}
