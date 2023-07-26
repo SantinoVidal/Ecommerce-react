@@ -58,11 +58,6 @@ const Navbar = () => {
                     <a className="nav-link">Bracelets</a>
                   </li>
                 </Link>
-                <Link to="/aboutUs">
-                  <li className="nav-item">
-                    <a className="nav-link">About us</a>
-                  </li>
-                </Link>
                 <li className="nav-item">
                   <CartWidget />
                 </li>

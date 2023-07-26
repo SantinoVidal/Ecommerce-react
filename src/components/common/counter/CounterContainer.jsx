@@ -1,11 +1,24 @@
 import { useState } from "react";
 import Counter from "./counter";
+import { ToastContainer, toast } from "react-toastify";
 
-const CounterContainer = ({ stock, onAdd }) => {
-  const [contador, setContador] = useState(1);
+const CounterContainer = ({ stock, onAdd, initial = 1 }) => {
+  const [contador, setContador] = useState(initial);
 
   const sumar = () => {
-    contador < stock ? setContador(contador + 1) : alert("Without stock");
+    contador < stock
+      ? setContador(contador + 1)
+      : toast.error("No more stock!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+    <ToastContainer />;
   };
 
   const restar = () => {

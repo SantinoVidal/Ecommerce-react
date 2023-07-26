@@ -110,9 +110,9 @@ const Error = () => {
           </h2>
           <img
             style={{
-              width: "40rem",
-              height: "39rem",
-              marginTop: "-14rem",
+              width: "38rem",
+              height: "37rem",
+              marginTop: "-12rem",
               marginLeft: "-25rem",
             }}
             src="https://res.cloudinary.com/dhghrffht/image/upload/v1688611194/f7e741d04baebfc12ea41a3e400c11f3_zdpdff.jpg"
