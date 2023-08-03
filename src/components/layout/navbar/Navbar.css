@@ -2,6 +2,10 @@
      background-color: #EC6F66;
 }
 
+.navbar-nav {
+     margin-top: 1rem;
+}
+
 .nav-link {
      position: relative;
      display: block;
@@ -38,14 +42,14 @@
      height: 3rem;
 }
 
-.navbar a {
+.navbar p {
+     text-decoration: none;
      color: #ffffff;
      font-weight: 500;
      font-family: 'Inter', sans-serif;
-     text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar p:hover {
      color: #ffffff;
      transition: 0.5s;
 }

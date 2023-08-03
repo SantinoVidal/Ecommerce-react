@@ -29,24 +29,48 @@ const CartContainer = () => {
   };
 
   return (
-    <div>
+    <div className="cartBox">
+      <br />
       {cart.map((elemento) => {
         return (
-          <div key={elemento.id}>
-            <h5>{elemento.title}</h5>
-            <img src={elemento.img} alt={elemento.title} />
-            <h5>${elemento.price}</h5>
-            <h5>Quantity: {elemento.quantity}</h5>
-            <button
-              className="btn btn-danger"
-              onClick={() => deleteById(elemento.id)}
-            >
-              Delete
-            </button>
-          </div>
+          <>
+            <div className="productInCart" key={elemento.id}>
+              <div className="cartText">
+                <h5 className="title">{elemento.title}</h5>
+              </div>
+              <div className="infoProduct">
+                <h4>
+                  <b style={{ color: "#EC6F66" }}>Materials: </b>
+                  {elemento.description}
+                </h4>
+                <h5>
+                  <b style={{ color: "#EC6F66" }}>Quantity: </b>{" "}
+                  {elemento.quantity}
+                </h5>
+              </div>
+              <h5>
+                <b style={{ color: "#EC6F66" }}>Unit price: </b> $
+                {elemento.price}
+              </h5>
+              <div className="productInCart-content">
+                <img src={elemento.img} alt={elemento.title} />
+              </div>
+              <div className="delete">
+                <button
+                  className="btn btn-danger"
+                  onClick={() => deleteById(elemento.id)}
+                >
+                  Delete{" "}
+                  <img
+                    src="https://res.cloudinary.com/dhghrffht/image/upload/v1691034963/icons8-basura-48_cogfly.png"
+                    alt="Delete"
+                  />
+                </button>
+              </div>
+            </div>
+          </>
         );
       })}
-
       {cart.length > 0 ? (
         <div>
           <button className="btn btn-secondary" onClick={limpiar}>
@@ -59,7 +83,63 @@ const CartContainer = () => {
         </div>
       ) : (
         <div className="cartEmpty">
-          <h1>Your cart is empty</h1>
+          <div className="empty">
+            <img
+              style={{
+                width: "6rem",
+                height: "6rem",
+                marginBottom: "-0.5rem",
+              }}
+              src="https://res.cloudinary.com/dhghrffht/image/upload/v1690757488/sad-face-drawing-on-white-260nw-590723933_bypwjg-removebg-preview_yu366q.png"
+              alt="Sad Face"
+            />
+            <h1
+              style={{
+                marginTop: "0.7rem",
+                fontWeight: "600",
+              }}
+            >
+              Oh no, your cart is empty!
+            </h1>
+          </div>
+          <div className="alert">
+            <h3 style={{ color: "#d7362e", fontSize: "2rem" }}>
+              Please, take a look at our products and try to add something
+            </h3>
+            <div className="clickHere">
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                }}
+                to="/"
+              >
+                <button
+                  className="btn btn-primary"
+                  style={{
+                    fontWeight: "500",
+                    fontSize: "1.3rem",
+                    marginTop: "1rem",
+                    marginBottom: "1rem",
+                    boxShadow:
+                      "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px",
+                  }}
+                >
+                  See products
+                  <img
+                    style={{
+                      width: "2rem",
+                      height: "2rem",
+                      marginTop: "-0.3rem",
+                      marginLeft: "0.3rem",
+                    }}
+                    src="https://res.cloudinary.com/dhghrffht/image/upload/v1690759258/hand-drawn-arrow-clicking-icon-260nw-1365529214_jihvlk-removebg-preview-fotor-20230730202040_cz7kmx.png"
+                    alt="click here"
+                  />
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
       )}
     </div>

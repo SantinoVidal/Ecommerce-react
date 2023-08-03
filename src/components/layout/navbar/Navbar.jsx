@@ -33,29 +33,38 @@ const Navbar = () => {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <ul className="navbar-nav">
-                <Link to="/">
+                <Link to="/" style={{ textDecoration: "none" }}>
                   <li className="nav-item">
-                    <a className="nav-link">Home</a>
+                    <p className="nav-link">Home</p>
                   </li>
                 </Link>
-                <Link to="/category/earrings">
+                <Link
+                  to="/category/earrings"
+                  style={{ textDecoration: "none" }}
+                >
                   <li className="nav-item">
-                    <a className="nav-link">Earrings</a>
+                    <p className="nav-link">Earrings</p>
                   </li>
                 </Link>
-                <Link to="/category/necklaces">
+                <Link
+                  to="/category/necklaces"
+                  style={{ textDecoration: "none" }}
+                >
                   <li className="nav-item">
-                    <a className="nav-link">Necklaces</a>
+                    <p className="nav-link">Necklaces</p>
                   </li>
                 </Link>
-                <Link to="/category/rings">
+                <Link to="/category/rings" style={{ textDecoration: "none" }}>
                   <li className="nav-item">
-                    <a className="nav-link">Rings</a>
+                    <p className="nav-link">Rings</p>
                   </li>
                 </Link>
-                <Link to="/category/bracelets">
+                <Link
+                  to="/category/bracelets"
+                  style={{ textDecoration: "none" }}
+                >
                   <li className="nav-item">
-                    <a className="nav-link">Bracelets</a>
+                    <p className="nav-link">Bracelets</p>
                   </li>
                 </Link>
                 <li className="nav-item">

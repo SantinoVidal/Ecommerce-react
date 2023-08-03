@@ -12,7 +12,7 @@ const Error = () => {
               alt="Majestic Logo"
             />
           </Link>
-          <h3 style={{ marginTop: "1rem", marginLeft: "2rem" }}>
+          <h3 style={{ marginTop: "0.5rem", marginLeft: "2rem" }}>
             Error 404 Page Not Found
           </h3>
         </div>
@@ -54,7 +54,7 @@ const Error = () => {
                   to="/"
                 >
                   <li style={{ marginBottom: "0.5rem" }}>
-                    <a>Home</a>
+                    <p>Home</p>
                   </li>
                 </Link>
                 <Link
@@ -66,7 +66,7 @@ const Error = () => {
                   to="/category/earrings"
                 >
                   <li style={{ marginBottom: "0.5rem" }}>
-                    <a>Earrings</a>
+                    <p>Earrings</p>
                   </li>
                 </Link>
                 <Link
@@ -78,7 +78,7 @@ const Error = () => {
                   to="/category/necklaces"
                 >
                   <li style={{ marginBottom: "0.5rem" }}>
-                    <a>Necklaces</a>
+                    <p>Necklaces</p>
                   </li>
                 </Link>
                 <Link
@@ -90,7 +90,7 @@ const Error = () => {
                   to="/category/rings"
                 >
                   <li style={{ marginBottom: "0.5rem" }}>
-                    <a>Rings</a>
+                    <p>Rings</p>
                   </li>
                 </Link>
                 <Link
@@ -102,7 +102,7 @@ const Error = () => {
                   to="/category/bracelets"
                 >
                   <li style={{ marginBottom: "0.5rem" }}>
-                    <a>Bracelets</a>
+                    <p>Bracelets</p>
                   </li>
                 </Link>
               </div>

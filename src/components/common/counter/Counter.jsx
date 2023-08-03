@@ -1,6 +1,6 @@
 const Counter = ({ contador, sumar, restar, onAdd }) => {
   return (
-    <>
+    <div>
       <div>
         <h3 className="stock">Stock available!</h3>
       </div>
@@ -18,7 +18,7 @@ const Counter = ({ contador, sumar, restar, onAdd }) => {
           Add to cart
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

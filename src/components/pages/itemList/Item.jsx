@@ -21,19 +21,17 @@ const Item = ({ items }) => {
           })
         : array.map((e) => {
             return (
-              <>
-                <div className="skeleton" key={e}>
-                  <Skeleton variant="rounded" width={210} height={230} />
-                  <Skeleton variant="text" sx={{ fontSize: "1.5rem" }} />
-                  <Skeleton variant="text" sx={{ fontSize: "1rem" }} />
-                  <Skeleton
-                    variant="text"
-                    width={100}
-                    sx={{ fontSize: "2rem" }}
-                  />
-                  <Skeleton variant="rectangular" width={60} height={20} />
-                </div>
-              </>
+              <div className="skeleton" key={e}>
+                <Skeleton variant="rounded" width={210} height={230} />
+                <Skeleton variant="text" sx={{ fontSize: "1.5rem" }} />
+                <Skeleton variant="text" sx={{ fontSize: "1rem" }} />
+                <Skeleton
+                  variant="text"
+                  width={100}
+                  sx={{ fontSize: "2rem" }}
+                />
+                <Skeleton variant="rectangular" width={60} height={20} />
+              </div>
             );
           })}
     </div>
