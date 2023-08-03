@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Counter from "./counter";
+import Counter from "./Counter";
 import { ToastContainer, toast } from "react-toastify";
 
 const CounterContainer = ({ stock, onAdd, initial = 1 }) => {

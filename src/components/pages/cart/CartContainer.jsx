@@ -29,7 +29,8 @@ const CartContainer = () => {
   };
 
   return (
-    <div className="cartBox">
+    <div>
+      <h1 className="cartView">Cart view</h1>
       <br />
       {cart.map((elemento) => {
         return (
