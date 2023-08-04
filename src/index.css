@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 * {
   margin: 0;
@@ -18,7 +18,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 .counter {
@@ -39,7 +39,7 @@ h5 {
   margin-right: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Jost', sans-serif;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
@@ -73,4 +73,133 @@ h5 {
 .orderID b {
   color: #EC6F66;
   text-transform: uppercase;
+}
+
+/*Check out*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 3px;
+  background-color: #ededed;
+}
+
+input {
+  margin-top: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  border: none;
+  font-family: 'Jost', sans-serif;
+}
+
+.btn-primary2 {
+  background: #fd746c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9068, #fd746c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  color: #111111;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  font-family: 'Jost', sans-serif;
+}
+
+.btn-primary2:hover {
+  background: #fd746c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #d67957, #d4615b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #df7e5b, #e96b64);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #111111;
+}
+
+.btn-primary2 img {
+  margin-top: -0.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/*Compra exitosa*/
+
+.compraExitosa {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  padding: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.compraExitosa h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'Jost', sans-serif;
+  color: #0aa42e;
+}
+
+.compraExitosa img {
+  margin-top: -0.5rem;
+}
+
+.compraExitosa h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111111;
+  font-family: 'Jost', sans-serif;
+}
+
+.compraExitosa h4 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  color: #111111;
+}
+
+.compraExitosa p {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #111111;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.return {
+  text-align: center;
+}
+
+.return img {
+  margin-top: -0.2rem;
+  height: 2.5rem;
+  height: 2.5rem;
+}
+
+.btn-primary3 {
+  background-color: #EC6F66;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  font-family: 'Jost', sans-serif;
+}
+
+.btn-primary3:hover {
+  background-color: #c05b54;
+  color: white;
 }

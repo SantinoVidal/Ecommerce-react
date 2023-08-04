@@ -46,7 +46,8 @@
      text-decoration: none;
      color: #ffffff;
      font-weight: 500;
-     font-family: 'Inter', sans-serif;
+     font-family: 'Jost', sans-serif;
+     font-size: 1.1rem;
 }
 
 .navbar p:hover {

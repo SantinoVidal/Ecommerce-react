@@ -30,7 +30,6 @@ const CartContainer = () => {
 
   return (
     <div>
-      <h1 className="cartView">Cart view</h1>
       <br />
       {cart.map((elemento) => {
         return (
@@ -51,7 +50,7 @@ const CartContainer = () => {
               </div>
               <h5>
                 <b style={{ color: "#EC6F66" }}>Unit price: </b> $
-                {elemento.price}
+                {elemento.price} USD
               </h5>
               <div className="productInCart-content">
                 <img src={elemento.img} alt={elemento.title} />
@@ -73,14 +72,26 @@ const CartContainer = () => {
         );
       })}
       {cart.length > 0 ? (
-        <div>
-          <button className="btn btn-secondary" onClick={limpiar}>
-            Clean cart
-          </button>
-          <h5>Total price: ${total}</h5>
-          <Link to="/checkout">
-            <button className="btn btn-primary">Complete the purchase</button>
-          </Link>
+        <div className="underItems">
+          <div className="purchase">
+            <h5>Total Price: ${total.toFixed(2)}</h5>
+            <button className="btn btn-secondary" onClick={limpiar}>
+              Clean cart{" "}
+              <img
+                src="https://res.cloudinary.com/dhghrffht/image/upload/v1691102433/icons8-escoba-50_fgizsv.png"
+                alt="clean"
+              />
+            </button>
+            <Link to="/checkout">
+              <button className="btn btn-primary">
+                Complete the purchase{" "}
+                <img
+                  src="https://res.cloudinary.com/dhghrffht/image/upload/v1691103659/icons8-aceptar-48_q3dztk.png"
+                  alt="success"
+                />
+              </button>
+            </Link>
+          </div>
         </div>
       ) : (
         <div className="cartEmpty">
@@ -98,6 +109,7 @@ const CartContainer = () => {
               style={{
                 marginTop: "0.7rem",
                 fontWeight: "600",
+                fontFamily: "Jost, sans-serif",
               }}
             >
               Oh no, your cart is empty!
@@ -116,7 +128,7 @@ const CartContainer = () => {
                 to="/"
               >
                 <button
-                  className="btn btn-primary"
+                  className="btn btn-primary1"
                   style={{
                     fontWeight: "500",
                     fontSize: "1.3rem",

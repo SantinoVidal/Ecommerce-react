@@ -1,5 +1,10 @@
 .cartView {
+     background-color: #111;
+     padding: 1.5rem;
      text-align: center;
+     color: white;
+     font-family: 'Jost', sans-serif;
+     margin-bottom: -1rem;
 }
 
 .cartEmpty {
@@ -34,16 +39,18 @@
      justify-content: center;
 }
 
-.btn-primary {
+.btn-primary1 {
      background-color: #ff4a40;
      padding-left: 2rem;
      padding-right: 2rem;
-     font-family: 'Inter', sans-serif;
+     font-family: 'Jost', sans-serif;
      border: none;
+     color: white;
 }
 
-.btn-primary:hover {
-     background-color: #ff675f;
+.btn-primary1:hover {
+     background-color: #cb453e;
+     color: white;
 }
 
 /* Productos en el carrito */
@@ -51,8 +58,8 @@
 .productInCart {
      margin-top: 2rem;
      margin-bottom: 1rem;
-     margin-left: 15rem;
-     margin-right: 15rem;
+     margin-left: 16rem;
+     margin-right: 16rem;
      padding: 0.5rem;
      padding-left: 4rem;
      padding-right: 4rem;
@@ -108,7 +115,7 @@
      color: #ffffff;
      border: none;
      font-size: 1rem;
-     font-family: 'Inter', sans-serif;
+     font-family: 'Jost', sans-serif;
      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px;
 }
 
@@ -121,4 +128,75 @@
      margin-top: -0.2rem;
      width: 1.5rem;
      height: 1.5rem;
+}
+
+/* Botones de abajo */
+
+.underItems {
+     margin-left: 16rem;
+}
+
+.btn-secondary {
+     margin-top: 0.5rem;
+     background-color: #252525;
+     padding: 0.55rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+     color: #ffffff;
+     border: none;
+     font-size: 1rem;
+     font-family: 'Jost', sans-serif;
+     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.btn-secondary:hover {
+     background-color: #121212;
+}
+
+.btn-secondary img {
+     margin-left: 0.3rem;
+     width: 2rem;
+     height: 2rem;
+}
+
+.purchase {
+     padding: 1rem;
+     background-image: linear-gradient(to right, #f17c73, #f07970, #ef766c, #ed7269, #ec6f66);
+     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+     border-radius: 3px;
+     margin-right: 16rem;
+     margin-top: 3rem;
+     margin-bottom: 3rem;
+     text-align: center;
+}
+
+.purchase h5 {
+     font-size: 3rem;
+     font-weight: 600;
+     font-family: 'Jost', sans-serif;
+     color: #ffffff;
+}
+
+.btn-primary {
+     margin-top: 0.5rem;
+     margin-left: 1rem;
+     background-color: #3cd951;
+     padding: 0.55rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+     color: #ffffff;
+     border: none;
+     font-size: 1rem;
+     font-family: 'Jost', sans-serif;
+     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.btn-primary:hover {
+     background-color: #2da03d;
+}
+
+.btn-primary img {
+     margin-left: 0.3rem;
+     width: 2rem;
+     height: 2rem;
 }

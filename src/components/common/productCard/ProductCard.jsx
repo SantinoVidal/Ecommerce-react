@@ -10,7 +10,7 @@ const ProductCard = ({ item }) => {
     <div key={item.id} style={{ marginBottom: "3rem" }}>
       <Card
         sx={{
-          height: 440,
+          height: 470,
           width: 240,
           boxShadow:
             "rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px",
@@ -31,10 +31,10 @@ const ProductCard = ({ item }) => {
               variant="h5"
               component="div"
               sx={{
-                fontSize: "1.1rem",
+                fontSize: "1.3rem",
                 color: "white",
                 fontWeight: "500",
-                fontFamily: "Inter",
+                fontFamily: "Jost, sans-serif",
               }}
             >
               {item.title}
@@ -43,11 +43,11 @@ const ProductCard = ({ item }) => {
               variant="body2"
               color="text.secondary"
               sx={{
-                fontSize: "0.8rem",
+                fontSize: "1rem",
                 color: "#111111",
                 marginBottom: "0.4rem",
                 fontWeight: "500",
-                fontFamily: "Inter",
+                fontFamily: "Jost, sans-serif",
               }}
             >
               Materials: {item.description}
@@ -59,7 +59,7 @@ const ProductCard = ({ item }) => {
                 fontSize: "1.4rem",
                 color: "white",
                 fontWeight: "400",
-                fontFamily: "Inter",
+                fontFamily: "Jost, sans-serif",
               }}
             >
               ${item.price} USD
@@ -71,7 +71,13 @@ const ProductCard = ({ item }) => {
             <Button
               size="small"
               color="primary"
-              sx={{ marginTop: "-0.7rem", color: "white", fontFamily: "Inter" }}
+              sx={{
+                marginTop: "-1.5rem",
+                marginLeft: "0.2rem",
+                color: "white",
+                fontFamily: "Jost, sans-serif",
+                fontWeight: "500",
+              }}
             >
               <p>See more »</p>
             </Button>

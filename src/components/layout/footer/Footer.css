@@ -19,6 +19,7 @@
 }
 
 .logoFooter h3 {
+     margin-top: -0.2rem;
      font-size: 2.5rem;
 }
 
@@ -26,7 +27,7 @@
      color: white;
      text-align: center;
      font-weight: 500;
-     font-family: 'Inter', sans-serif;
+     font-family: 'Jost', sans-serif;
      text-decoration: none;
 }
 
@@ -40,7 +41,7 @@
      color: white;
      text-align: center;
      font-weight: 500;
-     font-family: 'Inter', sans-serif;
+     font-family: 'Jost', sans-serif;
 }
 
 .media {
